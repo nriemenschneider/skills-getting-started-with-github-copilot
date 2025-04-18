@@ -86,7 +86,15 @@ def root():
 @app.get("/activities")
 def get_activities():
     # Ensure the response includes participants for each activity
-    return activities
+    return {
+        activity_name: {
+            "description": details["description"],
+            "schedule": details["schedule"],
+            "max_participants": details["max_participants"],
+            "participants": details["participants"],  # Include participants
+        }
+        for activity_name, details in activities.items()
+    }
 
 
 @app.post("/activities/{activity_name}/signup")

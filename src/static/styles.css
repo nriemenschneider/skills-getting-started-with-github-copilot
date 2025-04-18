@@ -153,9 +153,68 @@ button:hover {
   display: none;
 }
 
+.participant-info {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.participant-info h4 {
+  margin-bottom: 15px;
+  color: #0d47a1;
+}
+
+.participant-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.participant-info ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: circle;
+  color: #555;
+}
+
+.participant-info ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.student-list {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 5px;
+}
+
+.student-list h5 {
+  margin-bottom: 10px;
+  color: #33691e;
+}
+
+.student-list ul {
+  padding-left: 20px;
+  list-style-type: square;
+  color: #558b2f;
+}
+
+.student-list ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
   padding: 20px;
   color: #666;
 }
+
+activitySelect.innerHTML = '<option value="">-- Select an activity --</option>';
