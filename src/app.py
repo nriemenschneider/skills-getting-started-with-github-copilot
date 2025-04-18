@@ -85,6 +85,7 @@ def root():
 
 @app.get("/activities")
 def get_activities():
+    # Ensure the response includes participants for each activity
     return activities
 
 
